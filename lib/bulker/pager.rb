@@ -1,30 +1,4 @@
 module Bulker
-  class Criteria
-    attr_accessor :values
-    def initialize(values)
-      @values
-    end
-    
-    def offset(offset)
-      @offset = offset
-      self
-    end
-    
-    def limit(limit)
-      @limit = limit
-      self
-    end
-    
-    def define_each(&block)
-      @each_proc = block.call(values, @offset, @limit)
-    end
-    
-    def each(&block)
-      @each_proc.call
-    end
-  end
-  
-  
   class Pager
     class << self
       def each(cursor, limit, &block)
