@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "bulker"
   gem.homepage = "http://github.com/daixque/bulker"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{bulk execution library.}
+  gem.description = %Q{bulker is library that privides bulk execution functionality for paging and buffering.}
   gem.email = "daixque@gmail.com"
   gem.authors = ["daixque"]
   # dependencies defined in Gemfile
