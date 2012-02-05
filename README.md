@@ -52,9 +52,9 @@ When you use library other than ActiveRecord for accessing data soruce, you can 
 
 Wrap your data objects with *Bulker::Criteria*, and define behavior of *each* method through *define_each* using lambda. Then Bulker::Pager can work with the criteria.
 
-By default, same *each* implementation for array as above is bundled in *Bulker::Criteria* as *with_array*.
+By default, same *each* implementation for array as above is bundled in *Bulker::Criteria* as *from_array*.
 
-    criteria = Bulker::Criteria.with_array([1, 2, 3, 4, 5])
+    criteria = Bulker::Criteria.from_array([1, 2, 3, 4, 5])
 
 ### Bulker::Buffer
 

@@ -1,7 +1,7 @@
 module Bulker
   class Criteria
     class << self
-      def with_array(ary)
+      def from_array(ary)
         criteria = Criteria.new ary
         criteria.define_each lambda { |values, offset, limit, block|
           values[offset..(offset + limit - 1)].each do |v|

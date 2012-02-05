@@ -59,7 +59,7 @@ describe "Pager" do
   
   describe "Pager with Criteria" do
     it "retrieve pages from array with criteria" do
-      criteria = Bulker::Criteria.with_array (1..10).to_a
+      criteria = Bulker::Criteria.from_array (1..10).to_a
       result = []
       Bulker::Pager.each(criteria, 3) do |v|
         result << v
